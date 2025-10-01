@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
             $table->json('schema');
+            $table->json('meta');
             $table->timestamps();
         });
     }
